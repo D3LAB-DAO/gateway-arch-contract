@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "QueryMsg",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "config"
+      ],
+      "properties": {
+        "config": {
+          "type": "object",
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "request_i_d_info"
+      ],
+      "properties": {
+        "request_i_d_info": {
+          "type": "object",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "project_info"
+      ],
+      "properties": {
+        "project_info": {
+          "type": "object",
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  ]
+}

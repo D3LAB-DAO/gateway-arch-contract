@@ -14,13 +14,3 @@
 # IDEs
 *.iml
 .idea
-
-# etc.
-Publishing.md
-Importing.md
-Developing.md
-.archway
-.cargo
-.circleci
-.github
-.editorconfig
